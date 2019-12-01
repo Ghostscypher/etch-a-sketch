@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="others">
+        <input id="grid_size" type="text" placeholder="Grid size e.g. 8">
+        <button onclick="createGridProxy()">Create</button>
+        
+        <br>
+        <select name="selection" id="select-color-type" onchange="changeColorScheme(this)">
+            <option value="0" selected>Black and white</option>
+            <option value="1">Shade</option>
+            <option value="2">Random</option>
+        </select>
+        <button onclick="clearGrids();">Clear</button>
+    </div>
+    
     <div class="container"></div>
 </body>
 </html>

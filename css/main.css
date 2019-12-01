@@ -5,16 +5,14 @@ body {
 }
 
 .container {
-  top: 0;
-  width: 30em;
-  height: auto;
-  background: #ffffff;
+  background-color: #ffffff;
+  width: 500px;
+  height: 500px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 50%;
+  top: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,9 +25,19 @@ body {
 }
 
 .grid {
-  background: #17dfe6;
-  width: 50px;
-  height: 50px;
-  margin: 0 2px;
+  margin: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid .5px #dfd9d9;
+}
+
+.others {
+  position: absolute;
+  top: 10px;
+  left: 30%;
+}
+
+.others button {
+  margin: .5em;
 }
 /*# sourceMappingURL=main.css.map */
